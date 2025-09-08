@@ -1,0 +1,1007 @@
+2025-09-07 21:52:39,165 - movie_api - INFO - Starting Movie API server...
+2025-09-07 21:52:39,215 - uvicorn.error - INFO - Started server process [6800]
+2025-09-07 21:52:39,215 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 21:52:39,215 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 21:52:39,216 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 21:58:22,627 - uvicorn.access - INFO - 192.168.1.116:54539 - "POST /user/register HTTP/1.1" 404
+2025-09-07 22:00:50,463 - uvicorn.error - INFO - Shutting down
+2025-09-07 22:00:50,565 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-07 22:00:50,565 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-07 22:00:50,565 - uvicorn.error - INFO - Finished server process [6800]
+2025-09-07 22:00:52,391 - movie_api - INFO - Starting Movie API server...
+2025-09-07 22:00:52,423 - uvicorn.error - INFO - Started server process [14796]
+2025-09-07 22:00:52,423 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 22:00:52,423 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 22:00:52,424 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 22:00:56,393 - uvicorn.access - INFO - 192.168.1.116:54689 - "POST /user/register HTTP/1.1" 404
+2025-09-07 22:44:19,867 - uvicorn.access - INFO - 192.168.1.116:55189 - "GET / HTTP/1.1" 404
+2025-09-07 22:44:20,069 - uvicorn.access - INFO - 192.168.1.116:55189 - "GET /favicon.ico HTTP/1.1" 404
+2025-09-07 22:53:28,685 - uvicorn.access - INFO - 192.168.1.116:55723 - "POST /user/register HTTP/1.1" 404
+2025-09-07 22:57:46,347 - uvicorn.access - INFO - 192.168.1.116:55964 - "GET /api/user/register HTTP/1.1" 405
+2025-09-07 22:58:04,060 - uvicorn.access - INFO - 192.168.1.116:55985 - "GET /user/register HTTP/1.1" 404
+2025-09-07 22:59:47,487 - uvicorn.access - INFO - 192.168.1.116:56155 - "POST /api/user/register HTTP/1.1" 422
+2025-09-07 23:05:37,003 - uvicorn.access - INFO - 192.168.1.116:56555 - "GET /api/auth/register HTTP/1.1" 404
+2025-09-07 23:05:37,041 - uvicorn.access - INFO - 192.168.1.116:56558 - "GET /favicon.ico HTTP/1.1" 404
+2025-09-07 23:07:26,842 - uvicorn.access - INFO - 192.168.1.116:56778 - "POST /api/user/register HTTP/1.1" 422
+2025-09-07 23:14:02,436 - uvicorn.access - INFO - 192.168.1.116:57220 - "POST /api/user/register HTTP/1.1" 422
+2025-09-07 23:21:27,141 - uvicorn.access - INFO - 192.168.1.116:57694 - "POST /api/user/register HTTP/1.1" 500
+2025-09-07 23:21:27,141 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: FATAL:  database "yourdb" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\auth.py", line 61, in register
+    db_user = db.query(User).filter(User.username == user.username).first()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 3277, in connect
+    return self._connection_cls(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 2440, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: FATAL:  database "yourdb" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-07 23:25:18,926 - uvicorn.access - INFO - 192.168.1.116:57979 - "POST /api/auth/register HTTP/1.1" 404
+2025-09-07 23:25:59,303 - uvicorn.error - INFO - Shutting down
+2025-09-07 23:25:59,412 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-07 23:25:59,413 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-07 23:25:59,413 - uvicorn.error - INFO - Finished server process [14796]
+2025-09-07 23:26:38,944 - movie_api - INFO - Starting Movie API server...
+2025-09-07 23:26:38,984 - uvicorn.error - INFO - Started server process [20432]
+2025-09-07 23:26:38,985 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 23:26:38,985 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 23:26:38,985 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 23:27:02,916 - uvicorn.access - INFO - 192.168.1.116:58143 - "POST /api/user/register HTTP/1.1" 500
+2025-09-07 23:27:02,917 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: FATAL:  database "shartflixDB" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\auth.py", line 61, in register
+    db_user = db.query(User).filter(User.username == user.username).first()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 3277, in connect
+    return self._connection_cls(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 2440, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: FATAL:  database "shartflixDB" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-07 23:27:28,703 - uvicorn.error - INFO - Shutting down
+2025-09-07 23:27:28,811 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-07 23:27:28,811 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-07 23:27:28,811 - uvicorn.error - INFO - Finished server process [20432]
+2025-09-07 23:27:31,236 - movie_api - INFO - Starting Movie API server...
+2025-09-07 23:27:31,270 - uvicorn.error - INFO - Started server process [21940]
+2025-09-07 23:27:31,270 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 23:27:31,271 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 23:27:31,271 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 23:27:34,864 - uvicorn.access - INFO - 192.168.1.116:58184 - "POST /api/user/register HTTP/1.1" 500
+2025-09-07 23:27:34,864 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InsufficientPrivilege: permission denied for table users
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\auth.py", line 61, in register
+    db_user = db.query(User).filter(User.username == user.username).first()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.InsufficientPrivilege) permission denied for table users
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password AS users_password, users.photo_url AS users_photo_url, users.created_at AS users_created_at 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'kasimcan', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-07 23:29:01,190 - uvicorn.access - INFO - 192.168.1.116:58339 - "POST /api/user/register HTTP/1.1" 500
+2025-09-07 23:29:01,190 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\auth.py", line 64, in register
+    hashed_password = pwd_context.hash(user.password)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\utils\handlers.py", line 2176, in set_backend
+    raise default_error
+passlib.exc.MissingBackendError: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+2025-09-07 23:29:30,869 - uvicorn.error - INFO - Shutting down
+2025-09-07 23:29:30,978 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-07 23:29:30,978 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-07 23:29:30,978 - uvicorn.error - INFO - Finished server process [21940]
+2025-09-07 23:29:33,039 - movie_api - INFO - Starting Movie API server...
+2025-09-07 23:29:33,070 - uvicorn.error - INFO - Started server process [1452]
+2025-09-07 23:29:33,070 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 23:29:33,070 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 23:29:33,071 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 23:29:36,505 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-07 23:29:36,811 - uvicorn.access - INFO - 192.168.1.116:58388 - "POST /api/user/register HTTP/1.1" 500
+2025-09-07 23:29:36,811 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InsufficientPrivilege: permission denied for sequence users_id_seq
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\auth.py", line 67, in register
+    db.commit()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.InsufficientPrivilege) permission denied for sequence users_id_seq
+
+[SQL: INSERT INTO users (username, email, password, photo_url) VALUES (%(username)s, %(email)s, %(password)s, %(photo_url)s) RETURNING users.id, users.created_at]
+[parameters: {'username': 'kasimcan', 'email': 'ksmcn2000@gmail.com', 'password': '$2b$12$VIOQPpbZPVInGcVwS54ITOP.GXUClu1Ifvikl.f2fQoykGSz7plx2', 'photo_url': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-07 23:30:45,026 - uvicorn.access - INFO - 192.168.1.116:58518 - "POST /api/user/register HTTP/1.1" 200
+2025-09-07 23:32:29,607 - uvicorn.access - INFO - 192.168.1.116:58743 - "POST /api/user/register HTTP/1.1" 500
+2025-09-07 23:32:29,608 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+DETAIL:  Key (email)=(ksmcn2000@gmail.com) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\auth.py", line 67, in register
+    db.commit()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 4345, in flush
+    self._flush(objects)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 4480, in _flush
+    with util.safe_reraise():
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 4441, in _flush
+    flush_context.execute()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+DETAIL:  Key (email)=(ksmcn2000@gmail.com) already exists.
+
+[SQL: INSERT INTO users (username, email, password, photo_url) VALUES (%(username)s, %(email)s, %(password)s, %(photo_url)s) RETURNING users.id, users.created_at]
+[parameters: {'username': 'kasimcan sahin', 'email': 'ksmcn2000@gmail.com', 'password': '$2b$12$kksxZvZHG4BbOf5mW.4roe/N52KB0yA..ZxYMNdjdrH/NZcLFm5a2', 'photo_url': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-07 23:33:40,001 - uvicorn.access - INFO - 192.168.1.116:58865 - "POST /api/user/register HTTP/1.1" 200
+2025-09-07 23:40:52,763 - uvicorn.error - INFO - Shutting down
+2025-09-07 23:40:52,871 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-07 23:40:52,871 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-07 23:40:52,871 - uvicorn.error - INFO - Finished server process [1452]
+2025-09-07 23:41:22,867 - movie_api - INFO - Starting Movie API server...
+2025-09-07 23:41:22,903 - uvicorn.error - INFO - Started server process [22744]
+2025-09-07 23:41:22,903 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 23:41:22,903 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 23:41:22,904 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 23:41:26,234 - uvicorn.access - INFO - 192.168.1.116:59277 - "POST /api/user/register HTTP/1.1" 400
+2025-09-07 23:41:47,930 - uvicorn.error - INFO - Shutting down
+2025-09-07 23:41:48,039 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-07 23:41:48,039 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-07 23:41:48,039 - uvicorn.error - INFO - Finished server process [22744]
+2025-09-07 23:41:55,192 - movie_api - INFO - Starting Movie API server...
+2025-09-07 23:41:55,225 - uvicorn.error - INFO - Started server process [19948]
+2025-09-07 23:41:55,225 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-07 23:41:55,226 - uvicorn.error - INFO - Application startup complete.
+2025-09-07 23:41:55,226 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-07 23:41:58,944 - uvicorn.access - INFO - 192.168.1.116:59309 - "POST /api/user/register HTTP/1.1" 400
+2025-09-07 23:42:27,039 - uvicorn.access - INFO - 192.168.1.116:59343 - "POST /api/user/register HTTP/1.1" 400
+2025-09-07 23:42:43,638 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-07 23:42:43,940 - uvicorn.access - INFO - 192.168.1.116:59362 - "POST /api/user/register HTTP/1.1" 200
+2025-09-08 00:34:11,861 - uvicorn.access - INFO - 192.168.1.116:62198 - "POST /api/user/login HTTP/1.1" 422
+2025-09-08 00:37:16,978 - uvicorn.error - INFO - Shutting down
+2025-09-08 00:37:17,085 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 00:37:17,086 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 00:37:17,086 - uvicorn.error - INFO - Finished server process [19948]
+2025-09-08 00:37:19,790 - movie_api - INFO - Starting Movie API server...
+2025-09-08 00:37:19,827 - uvicorn.error - INFO - Started server process [23508]
+2025-09-08 00:37:19,828 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 00:37:19,828 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 00:37:19,829 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 00:38:07,591 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-08 00:38:07,921 - uvicorn.access - INFO - 192.168.1.116:62403 - "POST /api/user/register HTTP/1.1" 200
+2025-09-08 00:38:08,574 - uvicorn.access - INFO - 192.168.1.116:62405 - "POST /api/user/login HTTP/1.1" 422
+2025-09-08 00:41:03,390 - uvicorn.access - INFO - 192.168.1.116:62623 - "POST /api/user/login HTTP/1.1" 422
+2025-09-08 00:47:04,289 - uvicorn.error - INFO - Shutting down
+2025-09-08 00:47:04,398 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 00:47:04,398 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 00:47:04,398 - uvicorn.error - INFO - Finished server process [23508]
+2025-09-08 00:47:06,653 - movie_api - INFO - Starting Movie API server...
+2025-09-08 00:47:06,684 - uvicorn.error - INFO - Started server process [2444]
+2025-09-08 00:47:06,684 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 00:47:06,684 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 00:47:06,685 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 00:47:12,806 - uvicorn.access - INFO - 192.168.1.116:62950 - "POST /api/user/login HTTP/1.1" 422
+2025-09-08 00:51:26,006 - uvicorn.error - INFO - Shutting down
+2025-09-08 00:51:26,113 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 00:51:26,113 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 00:51:26,113 - uvicorn.error - INFO - Finished server process [2444]
+2025-09-08 00:51:28,370 - movie_api - INFO - Starting Movie API server...
+2025-09-08 00:51:28,403 - uvicorn.error - INFO - Started server process [19112]
+2025-09-08 00:51:28,403 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 00:51:28,403 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 00:51:28,404 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 00:51:32,487 - uvicorn.access - INFO - 192.168.1.116:63167 - "POST /api/user/login HTTP/1.1" 422
+2025-09-08 00:54:15,485 - uvicorn.error - INFO - Shutting down
+2025-09-08 00:54:15,594 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 00:54:15,594 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 00:54:15,594 - uvicorn.error - INFO - Finished server process [19112]
+2025-09-08 00:54:35,343 - movie_api - INFO - Starting Movie API server...
+2025-09-08 00:54:35,379 - uvicorn.error - INFO - Started server process [18012]
+2025-09-08 00:54:35,379 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 00:54:35,379 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 00:54:35,380 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 00:57:53,178 - uvicorn.access - INFO - 192.168.1.116:63576 - "POST /api/user/login HTTP/1.1" 422
+2025-09-08 01:01:40,424 - uvicorn.error - INFO - Shutting down
+2025-09-08 01:01:40,534 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 01:01:40,534 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 01:01:40,534 - uvicorn.error - INFO - Finished server process [18012]
+2025-09-08 01:01:51,235 - movie_api - INFO - Starting Movie API server...
+2025-09-08 01:01:51,267 - uvicorn.error - INFO - Started server process [19152]
+2025-09-08 01:01:51,268 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 01:01:51,268 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 01:01:51,268 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 01:01:54,488 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-08 01:01:55,099 - uvicorn.access - INFO - 192.168.1.116:63789 - "POST /api/user/login HTTP/1.1" 200
+2025-09-08 01:01:55,768 - uvicorn.access - INFO - 192.168.1.116:63791 - "GET /api/movie/list HTTP/1.1" 500
+2025-09-08 01:01:55,768 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column movies.is_favorite does not exist
+LINE 1: ...es_title, movies.poster_url AS movies_poster_url, movies.is_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\fastapi\routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\starlette\concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\ksmcn\shartflix_api\routes\movies.py", line 13, in get_movie_list
+    movies = db.query(Movie).offset(skip).limit(limit).all()
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column movies.is_favorite does not exist
+LINE 1: ...es_title, movies.poster_url AS movies_poster_url, movies.is_...
+                                                             ^
+
+[SQL: SELECT movies.id AS movies_id, movies.title AS movies_title, movies.poster_url AS movies_poster_url, movies.is_favorite AS movies_is_favorite, movies.user_id AS movies_user_id, movies.created_at AS movies_created_at 
+FROM movies 
+ LIMIT %(param_1)s OFFSET %(param_2)s]
+[parameters: {'param_1': 100, 'param_2': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-08 01:25:57,107 - uvicorn.error - INFO - Shutting down
+2025-09-08 01:25:57,215 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 01:25:57,215 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 01:25:57,215 - uvicorn.error - INFO - Finished server process [19152]
+2025-09-08 01:28:01,037 - movie_api - INFO - Starting Movie API server...
+2025-09-08 01:28:01,070 - uvicorn.error - INFO - Started server process [11616]
+2025-09-08 01:28:01,070 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 01:28:01,070 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 01:28:01,071 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 01:30:00,014 - uvicorn.error - INFO - Shutting down
+2025-09-08 01:30:00,124 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 01:30:00,124 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 01:30:00,124 - uvicorn.error - INFO - Finished server process [11616]
+2025-09-08 01:36:35,899 - movie_api - INFO - Starting Movie API server...
+2025-09-08 01:36:35,937 - uvicorn.error - INFO - Started server process [19672]
+2025-09-08 01:36:35,937 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 01:36:35,937 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 01:36:35,938 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 01:37:32,622 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-08 01:37:33,197 - uvicorn.access - INFO - 192.168.1.116:50185 - "POST /api/user/login HTTP/1.1" 200
+2025-09-08 01:37:33,939 - uvicorn.access - INFO - 192.168.1.116:50188 - "GET /api/movie/list HTTP/1.1" 404
+2025-09-08 01:37:41,271 - uvicorn.access - INFO - 192.168.1.116:50197 - "GET /api/movie/list HTTP/1.1" 404
+2025-09-08 01:40:08,719 - uvicorn.error - INFO - Shutting down
+2025-09-08 01:40:08,828 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 01:40:08,828 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 01:40:08,828 - uvicorn.error - INFO - Finished server process [19672]
+2025-09-08 01:40:11,225 - movie_api - INFO - Starting Movie API server...
+2025-09-08 01:40:11,259 - uvicorn.error - INFO - Started server process [11344]
+2025-09-08 01:40:11,259 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-08 01:40:11,260 - uvicorn.error - INFO - Application startup complete.
+2025-09-08 01:40:11,260 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-09-08 01:40:16,665 - uvicorn.access - INFO - 192.168.1.116:50356 - "GET /api/movie/list HTTP/1.1" 404
+2025-09-08 01:45:33,020 - uvicorn.access - INFO - 192.168.1.116:50701 - "GET /docs HTTP/1.1" 200
+2025-09-08 01:45:33,509 - uvicorn.access - INFO - 192.168.1.116:50701 - "GET /openapi.json HTTP/1.1" 200
+2025-09-08 01:48:31,065 - uvicorn.error - INFO - Shutting down
+2025-09-08 01:48:31,174 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-09-08 01:48:31,174 - uvicorn.error - INFO - Application shutdown complete.
+2025-09-08 01:48:31,174 - uvicorn.error - INFO - Finished server process [11344]
+2025-09-08 01:48:33,491 - movie_api - INFO - Starting Movie API server...
+2025-09-08 01:48:41,543 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 01:48:41,625 - movie_api - INFO - Response status: 404
+2025-09-08 01:51:28,673 - movie_api - INFO - Starting Movie API server...
+2025-09-08 01:51:34,221 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 01:51:34,319 - movie_api - INFO - Response status: 404
+2025-09-08 01:52:34,745 - movie_api - INFO - Incoming request: POST http://192.168.1.116:8000/api/user/login
+2025-09-08 01:52:34,767 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-08 01:52:35,310 - movie_api - INFO - Response status: 200
+2025-09-08 01:52:35,967 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 01:52:35,972 - movie_api - INFO - Response status: 404
+2025-09-08 02:01:46,273 - movie_api - INFO - Starting Movie API server...
+2025-09-08 02:01:51,575 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 02:01:51,658 - movie_api - INFO - Response status: 404
+2025-09-08 02:02:41,057 - movie_api - INFO - Starting Movie API server...
+2025-09-08 02:02:50,138 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 02:02:50,139 - movie_api - INFO - Response status: 404
+2025-09-08 02:03:12,825 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/docs
+2025-09-08 02:03:12,825 - movie_api - INFO - Response status: 200
+2025-09-08 02:03:12,992 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/openapi.json
+2025-09-08 02:03:13,004 - movie_api - INFO - Response status: 200
+2025-09-08 02:03:36,261 - movie_api - INFO - Starting Movie API server...
+2025-09-08 02:03:41,578 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/docs
+2025-09-08 02:03:41,579 - movie_api - INFO - Response status: 200
+2025-09-08 02:03:41,654 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/openapi.json
+2025-09-08 02:03:41,664 - movie_api - INFO - Response status: 200
+2025-09-08 02:50:48,263 - movie_api - INFO - Incoming request: POST http://192.168.1.116:8000/api/user/login
+2025-09-08 02:50:48,407 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ksmcn\PycharmProjects\DesignProject\shartflix_api\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-08 02:50:49,017 - movie_api - INFO - Response status: 200
+2025-09-08 02:51:06,383 - movie_api - INFO - Incoming request: POST http://192.168.1.116:8000/api/user/login
+2025-09-08 02:51:06,912 - movie_api - INFO - Response status: 200
+2025-09-08 02:54:58,647 - movie_api - INFO - Incoming request: POST http://192.168.1.116:8000/api/user/login
+2025-09-08 02:54:59,180 - movie_api - INFO - Response status: 200
+2025-09-08 02:54:59,900 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 02:54:59,910 - movie_api - INFO - Response status: 404
+2025-09-08 02:55:04,976 - movie_api - INFO - Incoming request: GET http://192.168.1.116:8000/api/movie/list
+2025-09-08 02:55:04,981 - movie_api - INFO - Response status: 404
